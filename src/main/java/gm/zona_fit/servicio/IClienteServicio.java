@@ -7,7 +7,7 @@ import gm.zona_fit.model.Cliente;
 public interface IClienteServicio {
     public List<Cliente> listarClientes();
 
-    public Cliente buscarClientePorId(Cliente cliente);
+    public Cliente buscarClientePorId(Integer idCliente );
 
     public void guardarCliente(Cliente cliente);
 
