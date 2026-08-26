@@ -6,15 +6,13 @@ import org.springframework.stereotype.Service;
 
 import gm.zona_fit.model.Cliente;
 import gm.zona_fit.repositorio.ClienteRepositorio;
+import lombok.RequiredArgsConstructor;
 
 @Service
+@RequiredArgsConstructor
 public class ClienteServicio implements IClienteServicio {
 
     private final ClienteRepositorio clienteRepositorio;
-
-    ClienteServicio(ClienteRepositorio clienteRepositorio) {
-        this.clienteRepositorio = clienteRepositorio;
-    }
 
     @Override
     public List<Cliente> listarClientes() {
